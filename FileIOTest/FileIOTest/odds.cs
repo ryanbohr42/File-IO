@@ -12,7 +12,7 @@ public class Odds
 	{
 
 	}
-    public void displayOdds(String[] file) 
+    public static void displayOdds(String[] file) 
     {
         foreach(String num in file)
         {
