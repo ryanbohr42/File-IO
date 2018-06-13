@@ -10,9 +10,9 @@ namespace FileIOTest
         {
         }
 
-        public void displayFifthNumber(string[] nums)
+        public static void displayFifthNumber(string[] nums)
         {
-            
+            Console.WriteLine("Every Fifth Number:");
             var counter = 4;
             while (counter < nums.Length)
             {

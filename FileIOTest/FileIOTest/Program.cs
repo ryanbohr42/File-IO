@@ -8,12 +8,10 @@ namespace FileIOTest
     {
         static void Main(string[] args)
         {
-            EveryFifth Ef = new EveryFifth();
-
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             path += "/numbers.txt";
             string[] lines = System.IO.File.ReadAllLines(path);
-            Ef.displayFifthNumber(lines);
+            EveryFifth.displayFifthNumber(lines);
             Console.ReadKey();
         }
 
