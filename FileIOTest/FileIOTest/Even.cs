@@ -11,8 +11,8 @@ namespace FileIOTest
         {
             foreach (string line in lines)
             {
-                if (Int32.Parse(line)%2 == 0)
-                    Console.WriteLine(Int32.Parse(line));
+                if (int.Parse(line)%2 == 0)
+                    Console.WriteLine(int.Parse(line));
             }
             Console.ReadKey();
         }
