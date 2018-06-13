@@ -7,7 +7,7 @@ namespace FileIOTest
 {
     static class DivisibleBy3
     {
-        public static List<int> Ints(string[] lines)
+        public static void Ints(string[] lines)
         {
             int[] numbers = new int[lines.Length];
             int i = 0;
@@ -23,7 +23,7 @@ namespace FileIOTest
                     threes.Add(numbers[i]);
                 }
             }
-            return threes;
+            threes.ForEach(Console.WriteLine);
         }
     }
 }
