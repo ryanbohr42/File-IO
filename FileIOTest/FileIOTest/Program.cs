@@ -13,6 +13,8 @@ namespace FileIOTest
             path += "/numbers.txt";
             string[] lines = System.IO.File.ReadAllLines(path);
             Console.WriteLine(lines[0]);
+            Console.WriteLine("Numbers in the file divisible by 3:");
+            DivisibleBy3.Ints(lines);
             Console.ReadKey();
         }
 
