@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Reflection;
 
 namespace FileIOTest
 {
@@ -6,8 +8,13 @@ namespace FileIOTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //string[] lines = System.IO.File.ReadAllLines("C:/Users/Ryan/Documents/Ryan/Full Stack Camp/Repos/File IO/FileIOTest/numbers.txt");
+            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            path += "/numbers.txt";
+            string[] lines = System.IO.File.ReadAllLines(path);
+            Console.WriteLine(lines[0]);
             Console.ReadKey();
         }
+
     }
 }
