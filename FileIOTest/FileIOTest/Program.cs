@@ -14,6 +14,7 @@ namespace FileIOTest
             string[] lines = System.IO.File.ReadAllLines(path);
             Console.WriteLine(lines[0]);
             Odds.displayOdds(lines);
+            Odds.displaySums(lines);
             Console.ReadKey();
         }
 
