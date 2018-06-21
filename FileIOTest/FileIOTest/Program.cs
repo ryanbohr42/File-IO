@@ -20,6 +20,7 @@ namespace FileIOTest
             DivisibleBy3.Ints(lines);
             EveryFifth.displayFifthNumber(lines);
             Even.displayEvenNumbers(lines);
+            displayWholeList.DisplayWholeList(lines);
             Console.ReadKey();
         }
     }
