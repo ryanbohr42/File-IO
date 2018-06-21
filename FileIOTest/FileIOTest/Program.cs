@@ -19,9 +19,9 @@ namespace FileIOTest
             Console.WriteLine("Numbers in the file divisible by 3:");
             DivisibleBy3.Ints(lines);
             EveryFifth.displayFifthNumber(lines);
+            Even.displayEvenNumbers(lines);
             Console.ReadKey();
         }
-
     }
 }
 
