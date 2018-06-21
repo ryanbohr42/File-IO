@@ -14,7 +14,6 @@ namespace FileIOTest
                 if (int.Parse(line)%2 == 0)
                     Console.WriteLine(int.Parse(line));
             }
-            Console.ReadKey();
         }
     }
 }
