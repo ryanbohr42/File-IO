@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 using System.IO;
 using System.Reflection;
 
@@ -15,8 +16,11 @@ namespace FileIOTest
             Console.WriteLine(lines[0]);
             Odds.displayOdds(lines);
             Odds.displaySums(lines);
+            Console.WriteLine("Numbers in the file divisible by 3:");
+            DivisibleBy3.Ints(lines);
             Console.ReadKey();
         }
 
     }
 }
+
