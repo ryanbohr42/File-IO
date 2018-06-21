@@ -18,6 +18,7 @@ namespace FileIOTest
             Odds.displaySums(lines);
             Console.WriteLine("Numbers in the file divisible by 3:");
             DivisibleBy3.Ints(lines);
+            EveryFifth.displayFifthNumber(lines);
             Console.ReadKey();
         }
 
