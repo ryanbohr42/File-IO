@@ -13,7 +13,8 @@ namespace FileIOTest
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             path += "/numbers.txt";
             string[] lines = System.IO.File.ReadAllLines(path);
-            Console.WriteLine(lines[0]);
+            Console.WriteLine("Please input file name:");
+            Console.ReadLine();
             Odds.displayOdds(lines);
             Odds.displaySums(lines);
             Console.WriteLine("Numbers in the file divisible by 3:");
